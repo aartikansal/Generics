@@ -2,12 +2,14 @@ import com.sun.jdi.IntegerValue;
 
 public class GenericsRunner {
     public static void main(String[] args) {
-        MyCustomList list = new MyCustomList();
+        MyCustomList<String> list = new MyCustomList<>();
         list.addElement("Element 1");
         list.addElement("Element 2");
+        System.out.println(list);
 
-        MyCustomList list2= new MyCustomList();
-        list.addElement(Integer.valueOf(5));
-        list.addElement(Integer.valueOf(7));
+        MyCustomList<Integer> list2= new MyCustomList<>();
+        list2.addElement(Integer.valueOf(5));
+        list2.addElement(Integer.valueOf(7));
+        System.out.println(list2);
     }
 }
