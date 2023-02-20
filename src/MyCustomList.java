@@ -13,6 +13,10 @@ public class MyCustomList<T> {
         return list.toString();
 
     }
+
+    public T get(int index) {
+        return list.get(index);// we are able to return the type as return value
+    }
 }
 
 
